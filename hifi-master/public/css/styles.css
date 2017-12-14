@@ -1,0 +1,64 @@
+ body {
+    font: 14px verdana, arial, sans-serif;
+ }
+
+ .produkt{
+     width: 20%;
+     float: left;
+     margin: 2.5%;
+     height: 500px;
+ }
+ .produkt1{
+    width: 20%;
+    float: left;
+    margin: 2.5%;
+    height: 200px;
+}
+ .produkter div{
+     padding: 20px;
+ }
+ img{
+     width: 100%;
+     height: auto;
+ }
+
+ label {
+    width: 145px;
+    display: inline-block;
+ }
+
+ button,
+ a.button {
+    margin: 2px;
+    padding: 2px 5px;
+    font: 12px verdana, arial, sans-serif;
+    text-decoration: none;
+ }
+ .delete{
+     color: #fff;
+     background-color: #f00;
+ }
+ .edit{
+     color: #fff;
+     background-color: #0f0;
+ }
+
+ .gem{
+    color: #fff;
+    background-color: #00f;
+}
+
+ th,
+ td {
+    height: 22px;
+ }
+
+ img.loading {
+    width: 220px;
+    height: 145px;
+ }
+
+ .error {
+    color: #dd0000;
+    font-weight: bold;
+ }
