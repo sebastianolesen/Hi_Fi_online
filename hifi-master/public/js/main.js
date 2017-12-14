@@ -22,7 +22,7 @@ function getParameterByName(name, url) {
             mode: 'cors',
             cache: 'default'
          };
-         let request = new Request(`http://localhost:1337/products/${id}`, init);
+         let request = new Request(`http://188.166.69.183:1337/products/${id}`, init);
    
          fetch(request)
             .then(response => {
@@ -42,7 +42,7 @@ function getParameterByName(name, url) {
       if (getParameterByName('action') == "edit") {
          let productId = (getParameterByName('id') != null ? getParameterByName('id') : 0);
    
-         fetch(`http://localhost:1337/products/${productId}`)
+         fetch(`http://188.166.69.183:1337/products/${productId}`)
             .then((response) => {
                if (response.ok) {
                   return response.json();
@@ -89,7 +89,7 @@ function getParameterByName(name, url) {
    
                   if (id != 0 && name != '' && description != '' && !isNaN(price) && id > 0) {
                      document.querySelector('#productsFormError').innerHTML = "";
-                     let url = `http://localhost:1337/products/${id}`;
+                     let url = `http://188.166.69.183:1337/products/${id}`;
                      let headers = new Headers();
                      headers.append('Content-Type', 'application/json');
    
@@ -167,7 +167,7 @@ function getParameterByName(name, url) {
    
             if (name != '' && description != '' && !isNaN(price)) {
                document.querySelector('#productsFormError').innerHTML = "";
-               let url = `http://localhost:1337/products/`;
+               let url = `http://188.166.69.183:1337/products/`;
                let headers = new Headers();
                headers.append('Content-Type', 'application/json');
    
@@ -203,7 +203,7 @@ function getParameterByName(name, url) {
          });
       }
    
-      fetch('http://localhost:1337/products')
+      fetch('http://188.166.69.183:1337/products')
       .then((response) => {
          if (response.ok) {
             return response.json();

@@ -1,4 +1,4 @@
-fetch('http://localhost:1337/products')
+fetch('http://188.166.69.183:1337/products')
 .then((response) => {
    if (response.ok) {
       return response.json();
